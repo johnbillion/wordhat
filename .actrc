@@ -1,0 +1,3 @@
+# Configuration for nektos/act
+
+-P ubuntu-18.04=shivammathur/node:1804
