@@ -1,6 +1,6 @@
 # Contributions are welcomed!
 
-WordHat has [comprehensive contribution documentation](https://wordhat.info/contributing/open-source/index.html), but here at the most important parts:
+WordHat has [comprehensive contribution documentation](https://wordhat.info/contributing/open-source.html), but here at the most important parts:
 
 ## Quick guide
 
