@@ -22,7 +22,7 @@ jobs:
   test:
     strategy:
       matrix:
-        php: ['7.2','7.3','7.4']
+        php: ['7.2','7.4']
         wp: ['5.1','5.8']
         driver: ['wpphp','wpcli']
       fail-fast: false
