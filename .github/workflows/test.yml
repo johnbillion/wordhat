@@ -79,3 +79,11 @@ jobs:
         composer run ci-tests
       env:
         BEHAT_PARAMS: "{\"extensions\":{\"PaulGibbs\\\\WordpressBehatExtension\":{\"default_driver\":\"${{ matrix.driver }}\"}}}"
+
+    - name: Tests failed
+      if: failure()
+      uses: actions/upload-artifact@v2
+      with:
+        name: behat-screenshots
+        path: |
+          tests/artifacts
