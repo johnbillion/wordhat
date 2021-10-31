@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+
+name: Tests
+on:
+  push:
+    branches:
+      - 'develop'
+      - 'trunk'
+  pull_request:
+    branches:
+      - '**'
+  # Once weekly on Wednesdays at 09:00 UTC.
+  schedule:
+    - cron: '0 9 * * 3'
+  workflow_dispatch:
+
+env:
+  WP_WEBROOT: tests/app/www/
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        php: ['7.2','7.3','7.4']
+        wp: ['5.1','5.8']
+        driver: ['wpphp','wpcli']
+      fail-fast: false
+    name: PHP ${{ matrix.php }} / WP ${{ matrix.wp }} / ${{ matrix.driver }}
+    runs-on: ubuntu-18.04
+    timeout-minutes: 30
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+
+    - name: Composer cache
+      uses: actions/cache@v1
+      with:
+        path: ~/.composer/cache
+        key: ${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+
+    - name: Install PHP
+      uses: shivammathur/setup-php@2.15.0
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: mysqli, xmlwriter
+        coverage: none
+      env:
+        fail-fast: true
+
+    - name: Debugging
+      run: |
+        php --version
+        php -m
+        composer --version
+        mysql --version
+
+    - name: Install dependencies
+      run: |
+        composer install --prefer-dist
+        composer require roots/wordpress="^${{ matrix.wp }}.0"
+
+    - name: Start services
+      run: |
+        sudo systemctl start mysql.service
+        php -S localhost:8000 -t $WP_WEBROOT 2>/dev/null &
+        sleep 5
+        scripts/install.sh
+
+    - name: Start Chrome
+      run: |
+        google-chrome-stable --headless --disable-gpu --no-sandbox --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 &
+        sleep 5
+
+    - name: Run the tests
+      run: |
+        curl -I http://localhost:8000
+        composer run ci-tests
+      env:
+        MYSQL_DATABASE: wordpress
+        WP_TESTS_DB_PASS: root
+        BEHAT_PARAMS: "{\"extensions\":{\"PaulGibbs\\\\WordpressBehatExtension\":{\"default_driver\":\"${{ matrix.driver }}\"}}}"
