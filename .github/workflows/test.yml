@@ -56,12 +56,13 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo systemctl start mysql.service
         composer install --prefer-dist
         composer require roots/wordpress="^${{ matrix.wp }}.0"
+        scripts/before-install.sh
 
     - name: Start services
       run: |
-        sudo systemctl start mysql.service
         php -S localhost:8000 -t $WP_WEBROOT 2>/dev/null &
         sleep 5
         scripts/install.sh
