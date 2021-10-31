@@ -15,6 +15,7 @@ on:
   workflow_dispatch:
 
 env:
+  WP_TESTS_DB_PASS: root
   WP_WEBROOT: tests/app/www/
 
 jobs:
@@ -60,8 +61,6 @@ jobs:
         composer install --prefer-dist
         composer require roots/wordpress="~${{ matrix.wp }}.0"
         scripts/before-install.sh
-      env:
-        WP_TESTS_DB_PASS: root
 
     - name: Start services
       run: |
@@ -79,5 +78,4 @@ jobs:
         curl -I http://localhost:8000
         composer run ci-tests
       env:
-        WP_TESTS_DB_PASS: root
         BEHAT_PARAMS: "{\"extensions\":{\"PaulGibbs\\\\WordpressBehatExtension\":{\"default_driver\":\"${{ matrix.driver }}\"}}}"
