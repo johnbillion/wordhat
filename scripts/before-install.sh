@@ -5,4 +5,4 @@ IFS=$'\n\t'
 # Paths relative to root.
 
 # Database.
-mysqladmin create wordpress_app -u root -p "$WP_TESTS_DB_PASS"
+mysqladmin create wordpress_app -u root -p "${WP_TESTS_DB_PASS:-''}"
