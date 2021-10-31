@@ -84,6 +84,6 @@ jobs:
       if: failure()
       uses: actions/upload-artifact@v2
       with:
-        name: Behat Screenshots / PHP ${{ matrix.php }} / WP ${{ matrix.wp }} / ${{ matrix.driver }}
+        name: Behat Screenshots - PHP ${{ matrix.php }} - WP ${{ matrix.wp }} - ${{ matrix.driver }}
         path: |
           tests/artifacts
