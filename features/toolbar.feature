@@ -8,10 +8,6 @@ Feature: Toolbar
     Given I am logged in as an administrator
     And I am on the homepage
 
-  Scenario: I can go to the support forums
-    When I follow the toolbar link "WordPress > Support"
-    Then I should be on "https://wordpress.org/support/"
-
   Scenario: I can add a new page
     When I follow the toolbar link "New > Page"
     Then I should be on the "Add New Page" screen
