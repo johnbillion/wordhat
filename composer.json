@@ -1,5 +1,5 @@
 {
-  "name": "paulgibbs/behat-wordpress-extension",
+  "name": "johnbillion/wordhat",
   "type": "behat-extension",
   "description": "WordHat is a Behat extension for WordPress. It provides WordPress-specific functionality for common testing scenarios specific to WordPress sites.",
   "keywords": [
