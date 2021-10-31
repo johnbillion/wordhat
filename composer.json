@@ -72,7 +72,7 @@
     ],
 
     "test:behat-ci": [
-      "vendor/bin/behat --config tests/app/behat-ci.yml --colors --format progress --strict"
+      "vendor/bin/behat --config tests/app/behat-ci.yml --colors --strict"
     ],
     "test:behat-local": [
       "vendor/bin/behat --colors --strict"
