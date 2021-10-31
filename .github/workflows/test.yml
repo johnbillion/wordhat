@@ -58,7 +58,7 @@ jobs:
       run: |
         sudo systemctl start mysql.service
         composer install --prefer-dist
-        composer require roots/wordpress="^${{ matrix.wp }}.0"
+        composer require roots/wordpress="~${{ matrix.wp }}.0"
         scripts/before-install.sh
       env:
         WP_TESTS_DB_PASS: root
