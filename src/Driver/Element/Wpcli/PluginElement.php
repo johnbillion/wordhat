@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli;
+namespace WordHat\Driver\Element\Wpcli;
 
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
+use WordHat\Driver\Element\BaseElement;
 
 /**
  * WP-CLI driver element for plugins.

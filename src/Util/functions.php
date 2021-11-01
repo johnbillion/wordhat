@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Util;
+namespace WordHat\Util;
 
 use Exception;
 use DOMDocument;

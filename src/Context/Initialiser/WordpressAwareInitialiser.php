@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context\Initialiser;
+namespace WordHat\Context\Initialiser;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\Initializer\ContextInitializer;
 
-use PaulGibbs\WordpressBehatExtension\WordpressDriverManager;
-use PaulGibbs\WordpressBehatExtension\Context\WordpressAwareInterface;
+use WordHat\WordpressDriverManager;
+use WordHat\Context\WordpressAwareInterface;
 
 /**
  * Behat Context initialiser.

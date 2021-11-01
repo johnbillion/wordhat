@@ -86,7 +86,7 @@ jobs:
         curl -I http://localhost:8000
         composer run ci-tests
       env:
-        BEHAT_PARAMS: "{\"extensions\":{\"PaulGibbs\\\\WordpressBehatExtension\":{\"default_driver\":\"${{ matrix.driver }}\"}}}"
+        BEHAT_PARAMS: "{\"extensions\":{\"WordHat\\\":{\"default_driver\":\"${{ matrix.driver }}\"}}}"
 
     - name: Tests failed
       if: failure()

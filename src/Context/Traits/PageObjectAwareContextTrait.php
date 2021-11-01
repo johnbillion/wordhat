@@ -1,6 +1,6 @@
 <?php
 
-namespace PaulGibbs\WordpressBehatExtension\Context\Traits;
+namespace WordHat\Context\Traits;
 
 use RuntimeException;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Factory as PageObjectFactory;

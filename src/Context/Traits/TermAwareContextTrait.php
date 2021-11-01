@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context\Traits;
+namespace WordHat\Context\Traits;
 
 /**
  * Provides driver agnostic logic (helper methods) relating to terms.

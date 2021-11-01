@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Context;
 
 use Behat\Gherkin\Node\TableNode;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\WidgetAwareContextTrait;
+use WordHat\Context\Traits\WidgetAwareContextTrait;
 
 /**
  * Provides step definitions relating to widgets.

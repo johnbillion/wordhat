@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Context;
 
 use Behat\Behat\Hook\Scope\AfterScenarioScope;
 use Behat\Behat\Hook\Scope\BeforeScenarioScope;
 use Behat\Mink\Driver\Selenium2Driver;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\CacheAwareContextTrait;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\DatabaseAwareContextTrait;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\PageObjectAwareContextTrait;
+use WordHat\Context\Traits\CacheAwareContextTrait;
+use WordHat\Context\Traits\DatabaseAwareContextTrait;
+use WordHat\Context\Traits\PageObjectAwareContextTrait;
 
 /**
  * Provides step definitions for a range of common tasks. Recommended for all test suites.

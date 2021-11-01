@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver;
+namespace WordHat\Driver;
 
 use RuntimeException;
 use UnexpectedValueException;

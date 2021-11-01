@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli;
+namespace WordHat\Driver\Element\Wpcli;
 
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
-use function PaulGibbs\WordpressBehatExtension\Util\buildCLIArgs;
+use WordHat\Driver\Element\BaseElement;
+use function WordHat\Util\buildCLIArgs;
 use UnexpectedValueException;
 
 /**

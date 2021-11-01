@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\PageObject;
+namespace WordHat\PageObject;
 
 use Behat\Mink\Exception\ExpectationException;
 

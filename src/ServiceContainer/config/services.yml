@@ -4,18 +4,18 @@ parameters:
 
 services:
   wordpress.wordpress:
-    class: 'PaulGibbs\WordpressBehatExtension\WordpressDriverManager'
+    class: 'WordHat\WordpressDriverManager'
     arguments:
       - {}
   wordpress.context.initializer:
-    class: 'PaulGibbs\WordpressBehatExtension\Context\Initialiser\WordpressAwareInitialiser'
+    class: 'WordHat\Context\Initialiser\WordpressAwareInitialiser'
     arguments:
       - "@wordpress.wordpress"
       - "%wordpress.parameters%"
     tags:
       - { name: context.initializer }
   wordpress.listener.driver:
-    class: 'PaulGibbs\WordpressBehatExtension\Listener\DriverListener'
+    class: 'WordHat\Listener\DriverListener'
     arguments:
       - "@wordpress.wordpress"
       - "%wordpress.parameters%"

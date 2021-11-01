@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element;
+namespace WordHat\Driver\Element;
 
 /**
  * WordPress driver element interface.

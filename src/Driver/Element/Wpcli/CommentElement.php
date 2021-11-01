@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli;
+namespace WordHat\Driver\Element\Wpcli;
 
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
+use WordHat\Driver\Element\BaseElement;
 use UnexpectedValueException;
-use function PaulGibbs\WordpressBehatExtension\Util\buildCLIArgs;
+use function WordHat\Util\buildCLIArgs;
 
 /**
  * WP-CLI driver element for post comments.

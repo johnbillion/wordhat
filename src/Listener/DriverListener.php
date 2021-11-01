@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Listener;
+namespace WordHat\Listener;
 
 use Behat\Behat\EventDispatcher\Event\ExampleTested;
 use Behat\Behat\EventDispatcher\Event\ScenarioLikeTested;
 use Behat\Behat\EventDispatcher\Event\ScenarioTested;
-use PaulGibbs\WordpressBehatExtension\WordpressDriverManager;
+use WordHat\WordpressDriverManager;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**

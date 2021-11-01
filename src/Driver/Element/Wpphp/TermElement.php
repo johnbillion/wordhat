@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpphp;
+namespace WordHat\Driver\Element\Wpphp;
 
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
+use WordHat\Driver\Element\BaseElement;
 use UnexpectedValueException;
 
 /**
