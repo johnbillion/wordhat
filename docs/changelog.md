@@ -1,7 +1,18 @@
 description: WordHat project news and changelog
 # News
 
-WordHat does not yet support WordPress' new content editor (Gutenberg). The step definitions for creating content assume, and only work with, the classic WordPress editor.
+WordHat does not yet support WordPress' block editor (Gutenberg). The step definitions for creating content assume, and only work with, the classic WordPress editor.
+
+## [4.0.0] (In development) - 2021-??-??
+### Added
+- Support for PHP 7.4 and PHP 8.
+
+### Changed
+- Drivers: Removed the back-compat support for the `wpapi` driver which has been named `wpphp` since v0.8.0.
+- CI: Switched from Travis CI to GitHub Actions.
+
+### Fixed
+- ...
 
 ## [3.3.0] - 2019-06-24
 ### Added
@@ -244,6 +255,7 @@ WordHat does not yet support WordPress' new content editor (Gutenberg). The step
 ### Added
 - First working version of basic architecture.
 
+[4.0.0]: https://github.com/johnbillion/wordhat/compare/v3.3.0...develop
 [3.3.0]: https://github.com/paulgibbs/behat-wordpress-extension/compare/v3.2.0...v3.3.0
 [3.2.0]: https://github.com/paulgibbs/behat-wordpress-extension/compare/v3.1.2...v3.2.0
 [3.1.2]: https://github.com/paulgibbs/behat-wordpress-extension/compare/v3.1.1...v3.1.2
