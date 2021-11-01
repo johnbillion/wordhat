@@ -170,7 +170,7 @@ class AdminPage extends Page
         $url = $this->getPath();
 
         foreach ($url_parameters as $parameter => $value) {
-            $url = str_replace(sprintf('{%s}', $parameter), $value, $url);
+            $url = str_replace(sprintf('{%s}', $parameter), (string) $value, $url);
         }
 
         return $url;
