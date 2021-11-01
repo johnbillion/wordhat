@@ -25,6 +25,14 @@ jobs:
         php: ['7.2','7.4']
         wp: ['5.1','5.8']
         driver: ['wpphp','wpcli']
+        include:
+          # Additional jobs for PHP 8
+          - php: '8.0'
+            wp: '5.8'
+            driver: 'wpphp'
+          - php: '8.0'
+            wp: '5.8'
+            driver: 'wpcli'
       fail-fast: false
     name: PHP ${{ matrix.php }} / WP ${{ matrix.wp }} / ${{ matrix.driver }}
     runs-on: ubuntu-18.04
