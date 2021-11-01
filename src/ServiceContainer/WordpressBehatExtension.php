@@ -23,7 +23,7 @@ use RuntimeException;
 /**
  * Main part of the Behat extension.
  */
-class WordpressBehatExtension implements ExtensionInterface
+class Extension implements ExtensionInterface
 {
     /**
      * @var ServiceProcessor

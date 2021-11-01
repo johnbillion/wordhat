@@ -32,7 +32,7 @@ default:
             api_url: http://localhost:9222
             validate_certificate: false
 
-    WordHat:
+    WordHat\Extension:
       default_driver: wpcli
       users:
         -
