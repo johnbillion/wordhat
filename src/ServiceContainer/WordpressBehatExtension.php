@@ -76,8 +76,7 @@ class WordpressBehatExtension implements ExtensionInterface
             ->children()
                 // Common settings.
                 ->enumNode('default_driver')
-                    // "wpapi" is for backwards compatibility; means "wpphp".
-                    ->values(['wpcli', 'wpapi', 'wpphp', 'blackbox'])
+                    ->values(['wpcli', 'wpphp', 'blackbox'])
                     ->defaultValue('wpcli')
                 ->end()
                 ->scalarNode('path')
@@ -169,11 +168,6 @@ class WordpressBehatExtension implements ExtensionInterface
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/config'));
         $loader->load('services.yml');
-
-        // Backwards compatibility for pre-1.0. Will be removed in 2.0.
-        if ($config['default_driver'] === 'wpapi') {
-            $config['default_driver'] = 'wpphp';
-        }
 
         $container->setParameter('wordpress.wordpress.default_driver', $config['default_driver']);
         $container->setParameter('wordpress.path', $config['path']);
