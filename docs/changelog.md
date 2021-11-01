@@ -8,6 +8,7 @@ WordHat does not yet support WordPress' block editor (Gutenberg). The step defin
 - Support for PHP 7.4 and PHP 8.
 
 ### Changed
+- Renamed the PHP namespace of the library to `WordHat`.
 - Drivers: Removed the back-compat support for the `wpapi` driver which has been named `wpphp` since v0.8.0.
 - CI: Switched from Travis CI to GitHub Actions.
 
