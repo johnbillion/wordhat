@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace PaulGibbs\WordpressBehatExtension\PageObject;
+namespace WordHat\Extension\PageObject;
 
 use Behat\Mink\Exception\ExpectationException;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Element;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Page;
-use PaulGibbs\WordpressBehatExtension\Context\RawWordpressContext;
+use WordHat\Extension\Context\RawWordpressContext;
 
 /**
  * Page object representing the WordPress log-in page.

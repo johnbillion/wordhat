@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\PageObject\Element;
+namespace WordHat\Extension\PageObject\Element;
 
 use SensioLabs\Behat\PageObjectExtension\PageObject\Element;
 

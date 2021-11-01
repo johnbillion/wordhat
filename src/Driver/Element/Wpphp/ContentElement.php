@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpphp;
+namespace WordHat\Extension\Driver\Element\Wpphp;
 
 use WP_Query;
 use UnexpectedValueException;
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
+use WordHat\Extension\Driver\Element\BaseElement;
 
 /**
  * WP-API driver element for content (i.e. blog posts).

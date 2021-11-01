@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Extension\Context;
 
 use Behat\Behat\Context;
 use Behat\MinkExtension\Context\RawMinkContext;
-use PaulGibbs\WordpressBehatExtension\WordpressDriverManager;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\PageObjectAwareContextTrait;
-use PaulGibbs\WordpressBehatExtension\Driver\DriverInterface;
+use WordHat\Extension\WordpressDriverManager;
+use WordHat\Extension\Context\Traits\PageObjectAwareContextTrait;
+use WordHat\Extension\Driver\DriverInterface;
 use SensioLabs\Behat\PageObjectExtension\Context\PageObjectAware;
 
 /**
@@ -124,7 +124,7 @@ class RawWordpressContext extends RawMinkContext implements WordpressAwareInterf
      *
      * @param string $name Optional. Name of specific driver to retrieve.
      *
-     * @return \PaulGibbs\WordpressBehatExtension\Driver\DriverInterface
+     * @return \WordHat\Extension\Driver\DriverInterface
      */
     public function getDriver(string $name = ''): DriverInterface
     {

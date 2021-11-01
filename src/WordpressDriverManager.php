@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension;
+namespace WordHat\Extension;
 
-use PaulGibbs\WordpressBehatExtension\Driver\DriverInterface;
-use PaulGibbs\WordpressBehatExtension\Driver\Element\ElementInterface;
+use WordHat\Extension\Driver\DriverInterface;
+use WordHat\Extension\Driver\Element\ElementInterface;
 
 use InvalidArgumentException;
 

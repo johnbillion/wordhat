@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Extension\Context;
 
 use UnexpectedValueException;
 use RuntimeException;
 use Behat\Gherkin\Node\TableNode;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\ContentAwareContextTrait;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\UserAwareContextTrait;
+use WordHat\Extension\Context\Traits\ContentAwareContextTrait;
+use WordHat\Extension\Context\Traits\UserAwareContextTrait;
 
 /**
  * Provides step definitions for creating content: post types, comments, and terms.

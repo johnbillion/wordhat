@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context\Traits;
+namespace WordHat\Extension\Context\Traits;
 
-use PaulGibbs\WordpressBehatExtension\Driver\DriverInterface;
+use WordHat\Extension\Driver\DriverInterface;
 
 /**
  * Parent class for all awareness traits providing common code.

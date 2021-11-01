@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Extension\Context;
 
-use PaulGibbs\WordpressBehatExtension\PageObject\DashboardPage;
+use WordHat\Extension\PageObject\DashboardPage;
 
 /**
  * Provides step definitions that are specific to the WordPress dashboard (wp-admin).

@@ -1,5 +1,5 @@
 parameters:
-  wordpress.driver.blackbox.class: PaulGibbs\WordpressBehatExtension\Driver\BlackboxDriver
+  wordpress.driver.blackbox.class: WordHat\Extension\Driver\BlackboxDriver
 
 services:
   wordpress.driver.blackbox:

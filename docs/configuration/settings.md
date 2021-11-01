@@ -11,7 +11,7 @@ Consult the [Behat website](http://behat.org/en/latest/user_guide/configuration.
 These are the options provided by the WordHat extension:
 
 ```YAML
-PaulGibbs\WordpressBehatExtension:
+WordHat\Extension:
   default_driver: wpcli
   path: ~
 

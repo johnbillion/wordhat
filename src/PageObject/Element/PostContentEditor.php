@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\PageObject\Element;
+namespace WordHat\Extension\PageObject\Element;
 
 /**
  * An Element representing the TinyMCE editor on the edit post screen.

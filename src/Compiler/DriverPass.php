@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Compiler;
+namespace WordHat\Extension\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 
 /**
- * WordpressBehatExtension container compilation pass.
+ * Extension container compilation pass.
  */
 class DriverPass implements CompilerPassInterface
 {

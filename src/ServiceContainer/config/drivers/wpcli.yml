@@ -1,14 +1,14 @@
 parameters:
-  wordpress.driver.wpcli.class: PaulGibbs\WordpressBehatExtension\Driver\WpcliDriver
-  wordpress.element.wpcli.cache.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\CacheElement
-  wordpress.element.wpcli.comment.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\CommentElement
-  wordpress.element.wpcli.content.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\ContentElement
-  wordpress.element.wpcli.database.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\DatabaseElement
-  wordpress.element.wpcli.plugin.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\PluginElement
-  wordpress.element.wpcli.term.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\TermElement
-  wordpress.element.wpcli.theme.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\ThemeElement
-  wordpress.element.wpcli.user.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\UserElement
-  wordpress.element.wpcli.widget.class: PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli\WidgetElement
+  wordpress.driver.wpcli.class: WordHat\Extension\Driver\WpcliDriver
+  wordpress.element.wpcli.cache.class: WordHat\Extension\Driver\Element\Wpcli\CacheElement
+  wordpress.element.wpcli.comment.class: WordHat\Extension\Driver\Element\Wpcli\CommentElement
+  wordpress.element.wpcli.content.class: WordHat\Extension\Driver\Element\Wpcli\ContentElement
+  wordpress.element.wpcli.database.class: WordHat\Extension\Driver\Element\Wpcli\DatabaseElement
+  wordpress.element.wpcli.plugin.class: WordHat\Extension\Driver\Element\Wpcli\PluginElement
+  wordpress.element.wpcli.term.class: WordHat\Extension\Driver\Element\Wpcli\TermElement
+  wordpress.element.wpcli.theme.class: WordHat\Extension\Driver\Element\Wpcli\ThemeElement
+  wordpress.element.wpcli.user.class: WordHat\Extension\Driver\Element\Wpcli\UserElement
+  wordpress.element.wpcli.widget.class: WordHat\Extension\Driver\Element\Wpcli\WidgetElement
 
 services:
   wordpress.driver.wpcli:

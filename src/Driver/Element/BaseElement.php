@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element;
+namespace WordHat\Extension\Driver\Element;
 
-use PaulGibbs\WordpressBehatExtension\Exception\UnsupportedDriverActionException;
-use PaulGibbs\WordpressBehatExtension\WordpressDriverManager;
+use WordHat\Extension\Exception\UnsupportedDriverActionException;
+use WordHat\Extension\WordpressDriverManager;
 
 /**
  * Common base class for WordPress driver elements.

@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\ServiceContainer;
+namespace WordHat\Extension\ServiceContainer;
 
 use Behat\Behat\Context\ServiceContainer\ContextExtension;
 use Behat\Testwork\ServiceContainer\Extension as ExtensionInterface;
@@ -14,16 +14,16 @@ use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader\FileLoader;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-use PaulGibbs\WordpressBehatExtension\Compiler\DriverPass;
-use PaulGibbs\WordpressBehatExtension\Compiler\DriverElementPass;
-use PaulGibbs\WordpressBehatExtension\Compiler\EventSubscriberPass;
+use WordHat\Extension\Compiler\DriverPass;
+use WordHat\Extension\Compiler\DriverElementPass;
+use WordHat\Extension\Compiler\EventSubscriberPass;
 
 use RuntimeException;
 
 /**
  * Main part of the Behat extension.
  */
-class WordpressBehatExtension implements ExtensionInterface
+class Extension implements ExtensionInterface
 {
     /**
      * @var ServiceProcessor
@@ -296,7 +296,7 @@ class WordpressBehatExtension implements ExtensionInterface
      */
     protected function processClassGenerator(ContainerBuilder $container)
     {
-        $definition = new Definition('PaulGibbs\WordpressBehatExtension\Context\ContextClass\ClassGenerator');
+        $definition = new Definition('WordHat\Extension\Context\ContextClass\ClassGenerator');
         $container->setDefinition(ContextExtension::CLASS_GENERATOR_TAG . '.simple', $definition);
     }
 
@@ -309,10 +309,10 @@ class WordpressBehatExtension implements ExtensionInterface
     {
         // Append our namespaces as earlier namespaces take precedence.
         $pages = $container->getParameter('sensio_labs.page_object_extension.namespaces.page');
-        $pages[] = 'PaulGibbs\WordpressBehatExtension\PageObject';
+        $pages[] = 'WordHat\Extension\PageObject';
 
         $elements = $container->getParameter('sensio_labs.page_object_extension.namespaces.element');
-        $elements[] = 'PaulGibbs\WordpressBehatExtension\PageObject\Element';
+        $elements[] = 'WordHat\Extension\PageObject\Element';
 
         $container->setParameter('sensio_labs.page_object_extension.namespaces.page', $pages);
         $container->setParameter('sensio_labs.page_object_extension.namespaces.element', $elements);

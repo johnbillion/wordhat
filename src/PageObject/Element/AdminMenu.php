@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\PageObject\Element;
+namespace WordHat\Extension\PageObject\Element;
 
 use RuntimeException;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Element;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
-use PaulGibbs\WordpressBehatExtension\Util;
+use WordHat\Extension\Util;
 
 /**
  * An Element representing the admin menu.

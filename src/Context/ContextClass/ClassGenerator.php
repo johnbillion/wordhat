@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context\ContextClass;
+namespace WordHat\Extension\Context\ContextClass;
 
 use Behat\Behat\Context\ContextClass\ClassGenerator as BehatContextGenerator;
 use Behat\Testwork\Suite\Suite;
@@ -15,7 +15,7 @@ class ClassGenerator implements BehatContextGenerator
      */
     protected static $template = <<<'PHP'
 <?php
-{namespace}use PaulGibbs\WordpressBehatExtension\Context\RawWordpressContext;
+{namespace}use WordHat\Extension\Context\RawWordpressContext;
 
 use Behat\Behat\Tester\Exception\PendingException;
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Extension\Context;
 
 use Behat\Behat\Context\Context;
-use PaulGibbs\WordpressBehatExtension\WordpressDriverManager;
+use WordHat\Extension\WordpressDriverManager;
 
 /**
  * Common interface for Behat contexts.

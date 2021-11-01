@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver\Element\Wpcli;
+namespace WordHat\Extension\Driver\Element\Wpcli;
 
-use PaulGibbs\WordpressBehatExtension\Driver\Element\BaseElement;
+use WordHat\Extension\Driver\Element\BaseElement;
 use UnexpectedValueException;
-use function PaulGibbs\WordpressBehatExtension\Util\buildCLIArgs;
+use function WordHat\Extension\Util\buildCLIArgs;
 
 /**
  * WP-API driver element for managing user accounts.

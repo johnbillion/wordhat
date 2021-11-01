@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context\Traits;
+namespace WordHat\Extension\Context\Traits;
 
 use Behat\Mink\Exception\DriverException;
 use Behat\Mink\Exception\ExpectationException;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
-use PaulGibbs\WordpressBehatExtension\PageObject\LoginPage;
+use WordHat\Extension\PageObject\LoginPage;
 use UnexpectedValueException;
 
 /**

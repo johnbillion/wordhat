@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Context;
+namespace WordHat\Extension\Context;
 
-use PaulGibbs\WordpressBehatExtension\PageObject\PostsEditPage;
+use WordHat\Extension\PageObject\PostsEditPage;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Mink\Exception\ExpectationException;
-use PaulGibbs\WordpressBehatExtension\Context\Traits\ContentAwareContextTrait;
+use WordHat\Extension\Context\Traits\ContentAwareContextTrait;
 
 /**
  * Provides step definitions relating to editing content in wp-admin.

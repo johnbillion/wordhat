@@ -1,23 +1,23 @@
 <?php
 declare(strict_types=1);
-namespace PaulGibbs\WordpressBehatExtension\Driver;
+namespace WordHat\Extension\Driver;
 
-use PaulGibbs\WordpressBehatExtension\Exception\UnsupportedDriverActionException;
-use PaulGibbs\WordpressBehatExtension\Driver\Element\ElementInterface;
+use WordHat\Extension\Exception\UnsupportedDriverActionException;
+use WordHat\Extension\Driver\Element\ElementInterface;
 
 /**
  * Common base class for WordPress drivers.
  *
  * A driver represents and manages the connection between the Behat environment and a WordPress site.
  *
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $cache
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $comment
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $content
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $database
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $plugin
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $term
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $theme
- * @property \PaulGibbs\WordpressBehatExtension\Driver\ElementInterface $user
+ * @property ElementInterface $cache
+ * @property ElementInterface $comment
+ * @property ElementInterface $content
+ * @property ElementInterface $database
+ * @property ElementInterface $plugin
+ * @property ElementInterface $term
+ * @property ElementInterface $theme
+ * @property ElementInterface $user
  */
 abstract class BaseDriver implements DriverInterface
 {
@@ -31,7 +31,7 @@ abstract class BaseDriver implements DriverInterface
     /**
      * Registered driver elements.
      *
-     * @var \PaulGibbs\WordpressBehatExtension\Driver\Element\ElementInterface[]
+     * @var Element\ElementInterface[]
      */
     protected $elements = [];
 
@@ -42,7 +42,7 @@ abstract class BaseDriver implements DriverInterface
      *
      * @throws UnsupportedDriverActionException
      *
-     * @return null|\PaulGibbs\WordpressBehatExtension\Driver\Element\ElementInterface Return element object.
+     * @return null|Element\ElementInterface Return element object.
      */
     public function __get(string $name)
     {

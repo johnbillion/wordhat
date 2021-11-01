@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PaulGibbs\\WordpressBehatExtension\\": "src"
+      "WordHat\\Extension\\": "src"
     },
     "files": [
       "src/Util/functions.php"
