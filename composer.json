@@ -12,8 +12,11 @@
   "license": "GPL-3.0-or-later",
   "authors": [
     {
-      "name": "Paul Gibbs",
-      "email": "djpaul@gmail.com",
+      "name": "John Blackbourn",
+      "homepage": "https://johnblackbourn.com"
+    },
+    {
+      "name": "Paul Wong-Gibbs",
       "homepage": "https://byotos.com"
     }
   ],
