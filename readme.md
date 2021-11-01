@@ -1,13 +1,11 @@
+[![Build Status](https://img.shields.io/github/workflow/status/johnbillion/wordhat/Tests/develop)](https://github.com/johnbillion/wordhat/actions)
+[![Latest Stable Version](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/v/stable.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
+[![Total Downloads](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/downloads.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
+[![License](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/license.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
+
 # WordHat: Behat for WordPress
 
 WordHat is a [Behat](http://behat.org) extension for [WordPress](https://wordpress.org). It provides WordPress-specific functionality for common testing scenarios specific to WordPress sites.
-
-[![Build Status on Travis-CI](https://travis-ci.com/paulgibbs/behat-wordpress-extension.svg?branch=master)](https://travis-ci.com/paulgibbs/behat-wordpress-extension)
-[![Latest Stable Version](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/v/stable.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
-[![Total Downloads](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/downloads.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
-[![Latest Unstable Version](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/v/unstable.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
-[![License](https://poser.pugx.org/paulgibbs/behat-wordpress-extension/license.svg)](https://packagist.org/packages/paulgibbs/behat-wordpress-extension)
-
 
 ## Use it for testing your WordPress site.
 
