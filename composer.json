@@ -37,7 +37,7 @@
     "behat/behat": "~3.1",
     "php": ">=7.2",
     "sensiolabs/behat-page-object-extension": "~2.1",
-    "friends-of-behat/mink-extension": "^2.5",
+    "friends-of-behat/mink-extension": "^2.5"
   },
   "require-dev": {
     "behat/mink-goutte-driver": "^1.2",
